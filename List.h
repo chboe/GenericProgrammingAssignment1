@@ -9,8 +9,8 @@
 class Node {
 private:
     std::string data;
-    Node *prev{};
-    Node *next{};
+    Node *prev;
+    Node *next;
     Node(std::string data, Node *next, Node *prev);
     friend class List;
 };

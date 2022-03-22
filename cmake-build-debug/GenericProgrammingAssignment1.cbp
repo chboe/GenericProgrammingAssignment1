@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/LinkedList.cpp">
+		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/List.cpp">
 			<Option target="GenericProgrammingAssignment1"/>
 		</Unit>
-		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/LinkedList.h">
+		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/List.h">
+			<Option target="GenericProgrammingAssignment1"/>
+		</Unit>
+		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/Tree.cpp">
+			<Option target="GenericProgrammingAssignment1"/>
+		</Unit>
+		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/Tree.h">
 			<Option target="GenericProgrammingAssignment1"/>
 		</Unit>
 		<Unit filename="D:/Programming/Projects/GenericProgrammingAssignment1/CMakeLists.txt">

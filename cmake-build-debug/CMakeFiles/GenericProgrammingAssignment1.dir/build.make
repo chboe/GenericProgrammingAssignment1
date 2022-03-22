@@ -76,33 +76,49 @@ include CMakeFiles/GenericProgrammingAssignment1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GenericProgrammingAssignment1.dir/flags.make
 
-CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/flags.make
-CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/includes_CXX.rsp
-CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj: ../LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\Projects\GenericProgrammingAssignment1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj"
-	D:\Programming\MingW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GenericProgrammingAssignment1.dir\LinkedList.cpp.obj -c D:\Programming\Projects\GenericProgrammingAssignment1\LinkedList.cpp
+CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/flags.make
+CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/includes_CXX.rsp
+CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj: ../List.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\Projects\GenericProgrammingAssignment1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj"
+	D:\Programming\MingW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GenericProgrammingAssignment1.dir\List.cpp.obj -c D:\Programming\Projects\GenericProgrammingAssignment1\List.cpp
 
-CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.i"
-	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\Projects\GenericProgrammingAssignment1\LinkedList.cpp > CMakeFiles\GenericProgrammingAssignment1.dir\LinkedList.cpp.i
+CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.i"
+	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\Projects\GenericProgrammingAssignment1\List.cpp > CMakeFiles\GenericProgrammingAssignment1.dir\List.cpp.i
 
-CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.s"
-	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\Projects\GenericProgrammingAssignment1\LinkedList.cpp -o CMakeFiles\GenericProgrammingAssignment1.dir\LinkedList.cpp.s
+CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.s"
+	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\Projects\GenericProgrammingAssignment1\List.cpp -o CMakeFiles\GenericProgrammingAssignment1.dir\List.cpp.s
+
+CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/flags.make
+CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj: CMakeFiles/GenericProgrammingAssignment1.dir/includes_CXX.rsp
+CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj: ../Tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\Projects\GenericProgrammingAssignment1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj"
+	D:\Programming\MingW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GenericProgrammingAssignment1.dir\Tree.cpp.obj -c D:\Programming\Projects\GenericProgrammingAssignment1\Tree.cpp
+
+CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.i"
+	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\Projects\GenericProgrammingAssignment1\Tree.cpp > CMakeFiles\GenericProgrammingAssignment1.dir\Tree.cpp.i
+
+CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.s"
+	D:\Programming\MingW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\Projects\GenericProgrammingAssignment1\Tree.cpp -o CMakeFiles\GenericProgrammingAssignment1.dir\Tree.cpp.s
 
 # Object files for target GenericProgrammingAssignment1
 GenericProgrammingAssignment1_OBJECTS = \
-"CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj"
+"CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj" \
+"CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj"
 
 # External object files for target GenericProgrammingAssignment1
 GenericProgrammingAssignment1_EXTERNAL_OBJECTS =
 
-GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj
+GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj
+GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj
 GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/build.make
 GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/linklibs.rsp
 GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/objects1.rsp
 GenericProgrammingAssignment1.exe: CMakeFiles/GenericProgrammingAssignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\Projects\GenericProgrammingAssignment1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GenericProgrammingAssignment1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\Projects\GenericProgrammingAssignment1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GenericProgrammingAssignment1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GenericProgrammingAssignment1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Programming/Projects/GenericProgrammingAssignment1/LinkedList.cpp" "D:/Programming/Projects/GenericProgrammingAssignment1/cmake-build-debug/CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj"
+  "D:/Programming/Projects/GenericProgrammingAssignment1/List.cpp" "D:/Programming/Projects/GenericProgrammingAssignment1/cmake-build-debug/CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj"
+  "D:/Programming/Projects/GenericProgrammingAssignment1/Tree.cpp" "D:/Programming/Projects/GenericProgrammingAssignment1/cmake-build-debug/CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

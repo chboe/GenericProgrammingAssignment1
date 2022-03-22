@@ -7,4 +7,6 @@ include_directories(.)
 
 add_executable(GenericProgrammingAssignment1
         List.cpp
-        List.h)
+        List.h
+        Tree.cpp
+        Tree.h)

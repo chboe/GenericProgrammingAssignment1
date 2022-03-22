@@ -142,32 +142,59 @@ GenericProgrammingAssignment1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/build
 .PHONY : GenericProgrammingAssignment1/fast
 
-LinkedList.obj: LinkedList.cpp.obj
+List.obj: List.cpp.obj
 
-.PHONY : LinkedList.obj
+.PHONY : List.obj
 
 # target to build an object file
-LinkedList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.obj
-.PHONY : LinkedList.cpp.obj
+List.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj
+.PHONY : List.cpp.obj
 
-LinkedList.i: LinkedList.cpp.i
+List.i: List.cpp.i
 
-.PHONY : LinkedList.i
+.PHONY : List.i
 
 # target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
+List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.i
+.PHONY : List.cpp.i
 
-LinkedList.s: LinkedList.cpp.s
+List.s: List.cpp.s
 
-.PHONY : LinkedList.s
+.PHONY : List.s
 
 # target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
+List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.s
+.PHONY : List.cpp.s
+
+Tree.obj: Tree.cpp.obj
+
+.PHONY : Tree.obj
+
+# target to build an object file
+Tree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj
+.PHONY : Tree.cpp.obj
+
+Tree.i: Tree.cpp.i
+
+.PHONY : Tree.i
+
+# target to preprocess a source file
+Tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.i
+.PHONY : Tree.cpp.i
+
+Tree.s: Tree.cpp.s
+
+.PHONY : Tree.s
+
+# target to generate assembly for a file
+Tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GenericProgrammingAssignment1.dir\build.make CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.s
+.PHONY : Tree.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GenericProgrammingAssignment1
-	@echo ... LinkedList.obj
-	@echo ... LinkedList.i
-	@echo ... LinkedList.s
+	@echo ... List.obj
+	@echo ... List.i
+	@echo ... List.s
+	@echo ... Tree.obj
+	@echo ... Tree.i
+	@echo ... Tree.s
 .PHONY : help
 
 
