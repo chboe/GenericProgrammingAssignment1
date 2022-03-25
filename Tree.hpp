@@ -14,8 +14,6 @@ namespace DM852{
             Node *right{};
             Node(int key, std::string value, Node *parent, Node *left, Node *right);
             friend class Tree;
-
-        public:
             Node *next();
             const Node *next() const;
             Node *prev();
