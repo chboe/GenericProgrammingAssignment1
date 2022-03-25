@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj"
+  "CMakeFiles/GenericProgrammingAssignment1.dir/List.cpp.obj.d"
   "CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj"
+  "CMakeFiles/GenericProgrammingAssignment1.dir/Tree.cpp.obj.d"
   "GenericProgrammingAssignment1.exe"
   "GenericProgrammingAssignment1.exe.manifest"
   "GenericProgrammingAssignment1.pdb"

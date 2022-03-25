@@ -1,3 +1,3 @@
 "D:\Programming\CLion\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\GenericProgrammingAssignment1.dir/objects.a
-D:\Programming\MingW\mingw32\bin\ar.exe cr CMakeFiles\GenericProgrammingAssignment1.dir/objects.a @CMakeFiles\GenericProgrammingAssignment1.dir\objects1.rsp
-D:\Programming\MingW\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\GenericProgrammingAssignment1.dir/objects.a -Wl,--no-whole-archive  -o GenericProgrammingAssignment1.exe -Wl,--out-implib,libGenericProgrammingAssignment1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GenericProgrammingAssignment1.dir\linklibs.rsp
+D:\Programming\MingW\mingw32\bin\ar.exe qc CMakeFiles\GenericProgrammingAssignment1.dir/objects.a @CMakeFiles\GenericProgrammingAssignment1.dir\objects1.rsp
+D:\Programming\MingW\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\GenericProgrammingAssignment1.dir/objects.a -Wl,--no-whole-archive -o GenericProgrammingAssignment1.exe -Wl,--out-implib,libGenericProgrammingAssignment1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GenericProgrammingAssignment1.dir\linklibs.rsp
