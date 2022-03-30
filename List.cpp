@@ -123,9 +123,9 @@ const List::Node *List::end() const {
 
 //Default constructor
 List::List() {
-    head = nullptr;
-    last = nullptr;
-    length = 0;
+    this -> head = nullptr;
+    this -> last = nullptr;
+    this -> length = 0;
 }
 
 //Deletes the list
@@ -198,9 +198,9 @@ List &List::operator=(const List &other) {
 
 //Constructs a node with given parameters
 List::Node::Node(std::string data, Node *prev, Node *next) {
-    data = std::move(data);
-    next = next;
-    prev = prev;
+    this -> data = std::move(data);
+    this -> next = next;
+    this -> prev = prev;
 }
 
 //Deletes next element which will trigger deletion of following elements

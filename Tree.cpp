@@ -5,11 +5,11 @@ using namespace DM852;
 
 //Constructor
 Tree::Node::Node(int key, std::string value, Tree::Node *parent, Tree::Node *left, Tree::Node *right) : key(key) {
-    key = key;
-    value = std::move(value);
-    parent = parent;
-    left = left;
-    right = right;
+    this -> key = key;
+    this -> value = std::move(value);
+    this -> parent = parent;
+    this -> left = left;
+    this -> right = right;
 }
 
 //Return the node with the next value
@@ -24,7 +24,29 @@ Tree::Node *Tree::Node::next() {
     } else {
         //Handles case of right child not existing
         Node* par = parent;
-        Node* current = this;
+        Node* current = par->right;
+        //If root returns nullptr
+        while( par != nullptr && par->right == current){
+            current = par;
+            par = par -> parent;
+        }
+        return par;
+    }
+}
+
+//Return the node with the next value
+const Tree::Node *Tree::Node::next() const {
+    //Handles case of right child existing
+    if(right != nullptr){
+        Node* current = right;
+        while(current -> left != nullptr){
+            current = current -> left;
+        }
+        return current;
+    } else {
+        //Handles case of right child not existing
+        Node* par = parent;
+        Node* current = par->right;
         //If root returns nullptr
         while( par != nullptr && par->right == current){
             current = par;
@@ -46,7 +68,29 @@ Tree::Node *Tree::Node::prev() {
     } else {
         //Handles case of left child not existing
         Node* par = parent;
-        Node* current = this;
+        Node* current = par->left;
+        //If root returns nullptr
+        while( par != nullptr && par->left == current){
+            current = par;
+            par = par -> parent;
+        }
+        return par;
+    }
+}
+
+//Return the node with the previous value
+const Tree::Node *Tree::Node::prev() const {
+    //Handles case of left child existing
+    if(left != nullptr){
+        Node* current = left;
+        while(current -> right != nullptr){
+            current = current -> right;
+        }
+        return current;
+    } else {
+        //Handles case of left child not existing
+        Node* par = parent;
+        Node* current = par->left;
         //If root returns nullptr
         while( par != nullptr && par->left == current){
             current = par;
@@ -181,8 +225,8 @@ const Tree::Node *Tree::end() const {
 }
 
 Tree::Tree() {
-    root = nullptr;
-    length = 0;
+    this -> root = nullptr;
+    this -> length = 0;
 }
 
 Tree::~Tree() {

@@ -7,6 +7,8 @@ int main() {
     bing.push_back("haha");
     bing.push_back("hahaha");
     bing.push_back("hahahaha");
+    bing.erase(bing.begin());
+    std::cout<<(bing.size())<<std::endl;
 
     DM852::List bong;
     bong.push_back("ha");
