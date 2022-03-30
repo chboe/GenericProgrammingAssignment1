@@ -47,6 +47,7 @@ namespace DM852{
     private:
         int length;
         Node *root;
+        void clearHelper(Node *curr);
     };
 }
 #endif //GENERICPROGRAMMINGASSIGNMENT1_TREE_HPP

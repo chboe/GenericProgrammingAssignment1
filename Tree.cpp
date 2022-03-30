@@ -233,6 +233,131 @@ Tree::~Tree() {
     delete root;
 }
 
+void Tree::erase(int key) {
+    //Find Node
+    Node* res = find(key);
+    if(res->left == nullptr && res->right == nullptr){ //Leaf node
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = nullptr;
+        } else if(res->parent->right == res){
+            res->parent->right = nullptr;
+        }
+        delete res;
+    } else if(res->left == nullptr){ //Only right child exists
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = res->right;
+            res->right->parent = res->parent;
+        } else if(res->parent->right == res){
+            res->parent->right = res->right;
+            res->right->parent = res->parent;
+        }
+        delete res;
+    } else if(res->right == nullptr){ //Only left child exists
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = res->left;
+            res->left->parent = res->parent;
+        } else if(res->parent->right == res){
+            res->parent->right = res->left;
+            res->left->parent = res->parent;
+        }
+        delete res;
+    } else { //2 children exist
+        Node* temp = res->next();
+        //Set children correctly
+        temp->left = res->left;
+        temp->right = res->right;
+        //Adjust pointer of previous parent
+        if(temp->parent->left == temp){
+            temp->parent->left = nullptr;
+        } else if(temp->parent->right == temp){
+            temp->parent->right = nullptr;
+        }
+        //Set new parent
+        temp->parent = res->parent;
+        //Adjust new parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = temp;
+        } else if(res->parent->right == res){
+            res->parent->right = temp;
+        }
+        delete res;
+    }
+}
+
+void Tree::erase(const Tree::Node *node) {
+    Node* res = const_cast<Node *>(node);
+    if(res->left == nullptr && res->right == nullptr){ //Leaf res
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = nullptr;
+        } else if(res->parent->right == res){
+            res->parent->right = nullptr;
+        }
+        delete res;
+    } else if(res->left == nullptr){ //Only right child exists
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = res->right;
+            res->right->parent = res->parent;
+        } else if(res->parent->right == res){
+            res->parent->right = res->right;
+            res->right->parent = res->parent;
+        }
+        delete res;
+    } else if(res->right == nullptr){ //Only left child exists
+        //Adjust parent's pointer
+        if(res->parent->left == res){
+            res->parent->left = res->left;
+            res->left->parent = res->parent;
+        } else if(res->parent->right == res){
+            res->parent->right = res->left;
+            res->left->parent = res->parent;
+        }
+        delete res;
+    } else { //2 children exist
+        Tree::Node *temp = res->next();
+        //Set children correctly
+        temp->left = res->left;
+        temp->right = res->right;
+        //Adjust pointer of previous parent
+        if (temp->parent->left == temp) {
+            temp->parent->left = nullptr;
+        } else if (temp->parent->right == temp) {
+            temp->parent->right = nullptr;
+        }
+        //Set new parent
+        temp->parent = res->parent;
+        //Adjust new parent's pointer
+        if (res->parent->left == res) {
+            res->parent->left = temp;
+        } else if (res->parent->right == res) {
+            res->parent->right = temp;
+        }
+        delete res;
+    }
+}
+
+void Tree::clearHelper(Node* curr){
+    if(curr->right != nullptr){
+        clearHelper(curr->right);
+    }
+    if(curr->left != nullptr){
+        clearHelper(curr->left);
+    }
+    delete curr->left;
+    delete curr->right;
+    delete curr->parent;
+}
+
+void Tree::clear() {
+    clearHelper(root);
+    length = 0;
+    root = nullptr;
+}
+
 //Deletes next element which will trigger deletion of following elements
 Tree::Node::~Node() {
     delete left;

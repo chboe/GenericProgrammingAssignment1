@@ -206,4 +206,5 @@ List::Node::Node(std::string data, Node *prev, Node *next) {
 //Deletes next element which will trigger deletion of following elements
 List::Node::~Node() {
     delete next;
+    delete prev;
 }
