@@ -40,14 +40,15 @@ namespace DM852{
         Tree();
         ~Tree();
         bool operator==(const Tree& other);
-        bool compareHelper(Node *first, Node *second);
         Tree(const Tree &other);
         Tree& operator=(const Tree &other);
 
     private:
+        void transplant(Node* u, Node* v);
+        Node* min(Node* node);
+        bool compareHelper(Node *first, Node *second);
         int length;
         Node *root;
-        void clearHelper(Node *curr);
     };
 }
 #endif //GENERICPROGRAMMINGASSIGNMENT1_TREE_HPP

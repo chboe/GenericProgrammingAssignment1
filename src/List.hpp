@@ -40,7 +40,6 @@ namespace DM852{
         List();
         ~List();
         bool operator==(const List& other);
-        bool compareHelper(Node *first, Node *second);
         List(const List &other);
         List& operator=(const List &other);
     private:

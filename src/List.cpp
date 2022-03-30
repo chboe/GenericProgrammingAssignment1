@@ -1,6 +1,7 @@
 #include "List.hpp"
 
 #include <utility>
+#include <iostream>
 
 using namespace DM852;
 
@@ -28,7 +29,7 @@ void List::push_back(const std::string &elem) {
 
 //Inserts a new node with the given value. Updates pointers as appropriate
 List::Node *List::insert(Node *node, const std::string &elem) {
-    Node *newNode = new Node(elem, node, node->prev);
+    Node *newNode = new Node(elem, node->prev, node);
     if(node == head){
         head = newNode;
     } else {
@@ -41,12 +42,7 @@ List::Node *List::insert(Node *node, const std::string &elem) {
 
 //Iterates through all elements in list and deletes them before resetting the attributes of the list.
 void List::clear() {
-    Node *curr = head;
-    while (head != nullptr) {
-        Node *temp = curr->next;
-        delete curr;
-        curr = temp;
-    }
+    delete head;
     head = nullptr;
     last = nullptr;
     length = 0;
@@ -61,6 +57,7 @@ void List::pop_back() {
     if(head == last){
         head = nullptr;
     }
+    temp->prev = nullptr;
     delete temp;
 }
 
@@ -78,6 +75,8 @@ void List::erase(Node *node) {
         node->next->prev = node->prev;
     }
     length--;
+    node->next = nullptr;
+    node->prev = nullptr;
     delete node;
 }
 
@@ -136,24 +135,19 @@ List::~List() {
 
 bool List::operator==(const List& other){
     //Compares list attributes before checking similarity element wise
-    return length == other.length && head->data == other.head->data && last->data == other.last->data && compareHelper(this->head, other.head);
-}
-
-bool List::compareHelper(Node *first, Node *second) {
-    //If both list end at the same time at this point they are similar
-    if (first == nullptr && second == nullptr){
-        return true;
-    }
-    //If one ends before the other they are not similar
-    if(first == nullptr || second == nullptr){
+    Node* l1e = head;
+    Node* l2e = other.head;
+    if(length != other.length){
         return false;
     }
-    //Checking data of both lists before checking next element
-    if( first->data == second->data){
-        return compareHelper(first->next,second->next);
+    while(l1e != nullptr){
+        if(l1e->data != l2e->data){
+            return false;
+        }
+        l1e = l1e->next;
+        l2e = l2e->next;
     }
-    //If data is not similar
-    return false;
+    return true;
 }
 
 //Copies a list and its nodes element wise
@@ -203,8 +197,7 @@ List::Node::Node(std::string data, Node *prev, Node *next) {
     this -> prev = prev;
 }
 
-//Deletes next element which will trigger deletion of following elements
+//Deletes node and all nexts
 List::Node::~Node() {
     delete next;
-    delete prev;
 }
