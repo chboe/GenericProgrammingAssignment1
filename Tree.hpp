@@ -12,12 +12,14 @@ namespace DM852{
             Node *parent{};
             Node *left{};
             Node *right{};
-            Node(int key, std::string value, Node *parent, Node *left, Node *right);
+
             friend class Tree;
             Node *next();
             const Node *next() const;
             Node *prev();
             const Node *prev() const;
+            Node(int key, std::string value, Node *parent, Node *left, Node *right);
+            ~Node();
         };
         int size() const;
         bool empty() const;
@@ -35,6 +37,12 @@ namespace DM852{
         const Node *begin() const;
         Node *end();
         const Node *end() const;
+        Tree();
+        ~Tree();
+        bool operator==(const Tree& other);
+        bool compareHelper(Node *first, Node *second);
+        Tree(const Tree &other);
+        Tree& operator=(const Tree &other);
 
     private:
         int length;
